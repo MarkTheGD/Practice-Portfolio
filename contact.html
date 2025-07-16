@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mark Harris - Web Developer</title>
+    <meta name="description" content="Connect with Mark Harris for web development projects, mentorship opportunities, collaboration, or feedback. Professional contact forms and multiple ways to get in touch.">
+    <meta name="author" content="Mark Harris">
+    <meta name="keywords" content="contact Mark Harris, web developer contact, mentorship inquiry, project collaboration, web development services">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="skills-dashboard.html">Skills Dashboard</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="page-hero">
+                <h1>Let's Connect</h1>
+                <p class="page-subtitle">Ready to discuss mentorship, collaboration, or web development opportunities</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="content">
+            <!-- Contact Introduction -->
+            <section id="contact-intro" aria-labelledby="intro-heading" class="intro-section">
+                <h2 id="intro-heading">Get In Touch</h2>
+                <p class="section-intro">
+                    I'm excited to connect with fellow developers, potential mentors, and anyone interested in 
+                    web development collaboration. Whether you're looking to discuss my portfolio, offer guidance 
+                    on my learning journey, or explore project opportunities, I'd love to hear from you.
+                </p>
+                
+                <div class="contact-stats">
+                    <div class="stat-item">
+                        <strong>&lt; 24hrs</strong>
+                        <span>Response Time</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>Professional</strong>
+                        <span>Communication</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>Open to</strong>
+                        <span>Learning Opportunities</span>
+                    </div>
+                </div>
+
+                <!-- Success Message -->
+                <div class="success-message" id="successMessage" style="display:none;">
+                    <h3>Message Sent Successfully! 🎉</h3>
+                    <p>Thank you for reaching out! I've received your message and will get back to you within 24 hours. I'm excited to discuss how we can work together.</p>
+                </div>
+            </section>
+
+            <!-- Primary Contact Form -->
+            <section id="main-contact-form" aria-labelledby="main-form-heading">
+                <h2 id="main-form-heading">Professional Inquiry Form</h2>
+                <p class="form-description">
+                    Use this form for mentorship inquiries, project discussions, collaboration opportunities, 
+                    or any professional web development communication.
+                </p>
+
+                <form id="contactForm" action="#" method="post" class="professional-form">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="full-name">Full Name <span class="required">*</span></label>
+                                <input type="text" 
+                                       id="full-name" 
+                                       name="name" 
+                                       required 
+                                       placeholder="Enter your full name"
+                                       aria-describedby="name-help">
+                                <small id="name-help" class="form-help">How should I address you in my response?</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email-address">Email Address <span class="required">*</span></label>
+                                <input type="email" 
+                                       id="email-address" 
+                                       name="email" 
+                                       required 
+                                       placeholder="your.email@example.com"
+                                       aria-describedby="email-help">
+                                <small id="email-help" class="form-help">I'll use this to send my response</small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" 
+                                       id="phone-number" 
+                                       name="phone" 
+                                       placeholder="(555) 123-4567"
+                                       aria-describedby="phone-help">
+                                <small id="phone-help" class="form-help">Optional - for urgent matters or project calls</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" 
+                                       id="company" 
+                                       name="company" 
+                                       placeholder="Your Company or Organization"
+                                       aria-describedby="company-help">
+                                <small id="company-help" class="form-help">Help me understand your context</small>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Inquiry Details</legend>
+                        
+                        <div class="form-group">
+                            <label for="inquiry-type">Type of Inquiry <span class="required">*</span></label>
+                            <select id="inquiry-type" name="inquiry-type" required aria-describedby="inquiry-help">
+                                <option value="">-- Please Select an Option --</option>
+                                <option value="mentorship">Mentorship Opportunity</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="job-opportunity">Job/Internship Opportunity</option>
+                                <option value="feedback">Portfolio Feedback</option>
+                                <option value="networking">Professional Networking</option>
+                                <option value="learning-resource">Learning Resource Sharing</option>
+                                <option value="other">Other Professional Inquiry</option>
+                            </select>
+                            <small id="inquiry-help" class="form-help">This helps me provide the most relevant response</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-timeline">Project Timeline (if applicable)</label>
+                            <select id="project-timeline" name="timeline" aria-describedby="timeline-help">
+                                <option value="">-- Select Timeline --</option>
+                                <option value="immediate">Immediate (1-2 weeks)</option>
+                                <option value="short-term">Short-term (1-2 months)</option>
+                                <option value="medium-term">Medium-term (3-6 months)</option>
+                                <option value="long-term">Long-term (6+ months)</option>
+                                <option value="ongoing">Ongoing collaboration</option>
+                                <option value="flexible">Flexible timing</option>
+                            </select>
+                            <small id="timeline-help" class="form-help">Helps me understand urgency and planning needs</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message-details">Message Details <span class="required">*</span></label>
+                            <textarea id="message-details" 
+                                      name="message" 
+                                      rows="6" 
+                                      required 
+                                      placeholder="Please provide details about your inquiry, project requirements, mentorship goals, or any specific questions you have about my work..."
+                                      aria-describedby="message-help"></textarea>
+                            <small id="message-help" class="form-help">Be as specific as possible - it helps me provide a better response</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="portfolio-interest">Specific Portfolio Interest</label>
+                            <fieldset class="checkbox-group">
+                                <legend>Which parts of my portfolio are you most interested in?</legend>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="html-skills" name="portfolio-interest[]" value="html-skills">
+                                    <label for="html-skills">HTML5 & Semantic Markup Skills</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="accessibility" name="portfolio-interest[]" value="accessibility">
+                                    <label for="accessibility">Web Accessibility Implementation</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="learning-approach" name="portfolio-interest[]" value="learning-approach">
+                                    <label for="learning-approach">Learning Methodology & Progress</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="project-quality" name="portfolio-interest[]" value="project-quality">
+                                    <label for="project-quality">Project Quality & Documentation</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="growth-potential" name="portfolio-interest[]" value="growth-potential">
+                                    <label for="growth-potential">Growth Potential & Career Readiness</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Communication Preferences</legend>
+                        
+                        <div class="form-group">
+                            <label>Preferred Response Method</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="response-email" name="response-method" value="email" checked>
+                                    <label for="response-email">Email Response</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="response-call" name="response-method" value="phone">
+                                    <label for="response-call">Phone Call</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="response-video" name="response-method" value="video">
+                                    <label for="response-video">Video Call (Zoom/Teams)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="portfolio-updates" name="updates" value="yes">
+                            <label for="portfolio-updates">
+                                I'd like to receive occasional updates about Mark's learning progress and new projects
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Send Professional Inquiry</button>
+                        <button type="reset" class="reset-btn">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Quick Feedback Form -->
+            <section id="quick-feedback" aria-labelledby="feedback-heading">
+                <h2 id="feedback-heading">Quick Feedback & Suggestions</h2>
+                <p class="form-description">
+                    Have a quick suggestion about my portfolio, found a bug, or want to share a helpful resource? 
+                    Use this streamlined form for brief feedback.
+                </p>
+
+                <form id="feedbackForm" action="#" method="post" class="feedback-form">
+                    <div class="form-group">
+                        <label for="feedback-type">Feedback Category</label>
+                        <select id="feedback-type" name="feedback-type">
+                            <option value="">-- Select Category --</option>
+                            <option value="portfolio-improvement">Portfolio Improvement</option>
+                            <option value="technical-issue">Technical Issue/Bug</option>
+                            <option value="accessibility-suggestion">Accessibility Suggestion</option>
+                            <option value="learning-resource">Learning Resource Recommendation</option>
+                            <option value="general-encouragement">General Encouragement</option>
+                            <option value="other">Other Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-message">Your Feedback <span class="required">*</span></label>
+                        <textarea id="feedback-message" 
+                                  name="feedback" 
+                                  rows="4" 
+                                  required 
+                                  placeholder="Share your thoughts, suggestions, or observations about my portfolio..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-email">Email (optional)</label>
+                        <input type="email" 
+                               id="feedback-email" 
+                               name="feedback-email" 
+                               placeholder="your.email@example.com">
+                        <small class="form-help">Leave this blank for anonymous feedback</small>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Submit Feedback</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Alternative Contact Methods -->
+            <section id="contact-alternatives" aria-labelledby="alternatives-heading">
+                <h2 id="alternatives-heading">Other Ways to Connect</h2>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        
+                        <h3>💼 Professional Networks</h3>
+                        <p>Connect with me on professional platforms for networking and career discussions.</p>
+                        <div class="method-links">
+                            <a href="https://github.com/MarkTheGD" target="_blank" rel="noopener noreferrer" class="method-link">
+                                <span>GitHub Profile</span>
+                                <small>View my code repositories and development activity</small>
+                            </a>
+                            <a href="https://linkedin.com/in/markharris" target="_blank" rel="noopener noreferrer" class="method-link">
+                                <span>LinkedIn Profile</span>
+                                <small>Professional networking and career updates</small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+
+                        <h3>📧 Direct Email</h3>
+                        <p>For formal inquiries or if you prefer traditional email communication.</p>
+                        <div class="method-links">
+                            <a href="mailto:mark.harris.dev@example.com" class="method-link">
+                                <span>mark.harris.dev@example.com</span>
+                                <small>Professional development inquiries</small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">📄</div>
+                        <h3>Professional Documents</h3>
+                        <p>Download or view my skills summary for offline review and traditional applications.</p>
+                        <div class="method-links">
+                            <a href="printable-skills-summary.html" target="_blank" class="method-link">
+                                <span>📋 Printable Skills Summary</span>
+                                <small>PDF-ready format for resumes, interviews, and offline review</small>
+                            </a>
+                            <p class="method-description">
+                                <strong>Perfect for:</strong> Job applications, in-person meetings, mentor reviews, 
+                                and situations where you need a traditional document format alongside my online portfolio.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>🤝 Mentorship Requests</h3>
+                        <p>Specifically interested in offering mentorship or professional guidance?</p>
+                        <div class="method-links">
+                            <p class="method-description">
+                                I'm actively seeking experienced developers who can provide guidance on:
+                            </p>
+                            <ul class="mentorship-topics">
+                                <li>Advanced CSS and modern layout techniques</li>
+                                <li>JavaScript fundamentals and best practices</li>
+                                <li>React development and component architecture</li>
+                                <li>Professional development workflows and tools</li>
+                                <li>Career planning and industry insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Response Expectations -->
+            <section id="response-info" aria-labelledby="response-heading">
+                <h2 id="response-heading">What to Expect</h2>
+                
+                <div class="response-timeline">
+                    <div class="response-item">
+                        <h3>📨 Immediate Confirmation</h3>
+                        <p>You'll see a confirmation message right after submitting any form, letting you know I've received your inquiry.</p>
+                    </div>
+                    
+                    <div class="response-item">
+                        <h3>⚡ Quick Response</h3>
+                        <p><strong>Within 24 hours:</strong> I'll send a personalized response acknowledging your message and providing initial thoughts or answers.</p>
+                    </div>
+                    
+                    <div class="response-item">
+                        <h3>🎯 Thoughtful Follow-up</h3>
+                        <p><strong>Within 48-72 hours:</strong> For complex inquiries, I'll provide a detailed response with specific answers, resources, or next steps.</p>
+                    </div>
+                    
+                    <div class="response-item">
+                        <h3>🚀 Action-Oriented</h3>
+                        <p>Every response includes clear next steps, whether that's scheduling a call, sharing resources, or outlining collaboration possibilities.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section id="contact-cta" aria-labelledby="cta-heading" class="cta-section">
+                <h2 id="cta-heading">Ready to Start a Conversation?</h2>
+                <p>
+                    I'm genuinely excited about connecting with the web development community. Whether you're 
+                    offering mentorship, looking for a motivated junior developer, or simply want to share 
+                    feedback on my portfolio, every conversation is a valuable learning opportunity.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#main-contact-form" class="cta-primary">Send Professional Inquiry</a>
+                    <a href="#quick-feedback" class="cta-secondary">Share Quick Feedback</a>
+                    <a href="projects.html" class="cta-secondary">Review My Work First</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p><strong>Professional communication, quick responses, and genuine enthusiasm for learning!</strong></p>
+            <p>Explore more: <a href="about.html">My Journey</a> | <a href="projects.html">My Projects</a> | <a href="skills-dashboard.html">Skills Progress</a></p>
+            <p>&copy; 2025 Mark Harris. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Form Handling JavaScript -->
+    <script>
+        // Professional Contact Form Handler
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Show success message
+            const successMessage = document.getElementById("successMessage");
+            successMessage.style.display = "block";
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 10 seconds
+            setTimeout(() => {
+                successMessage.style.display = "none";
+            }, 10000);
+        });
+
+        // Quick Feedback Form Handler
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Show thank you alert
+            alert("Thank you for your feedback! 🙏\n\nYour input helps me improve my portfolio and development skills. I really appreciate you taking the time to share your thoughts!");
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Form Enhancement: Auto-expand textarea
+        document.querySelectorAll('textarea').forEach(textarea => {
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = (this.scrollHeight) + 'px';
+            });
+        });
+
+        // Form Enhancement: Show character count for message field
+        const messageField = document.getElementById('message-details');
+        if (messageField) {
+            const charCounter = document.createElement('small');
+            charCounter.className = 'char-counter';
+            charCounter.style.float = 'right';
+            charCounter.style.color = '#666';
+            messageField.parentNode.appendChild(charCounter);
+            
+            messageField.addEventListener('input', function() {
+                const count = this.value.length;
+                charCounter.textContent = `${count} characters`;
+                
+                if (count < 50) {
+                    charCounter.style.color = '#f57c00';
+                    charCounter.textContent += ' (consider adding more detail)';
+                } else if (count > 1000) {
+                    charCounter.style.color = '#f44336';
+                    charCounter.textContent += ' (consider being more concise)';
+                } else {
+                    charCounter.style.color = '#4CAF50';
+                }
+            });
+        }
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Summary - Mark Harris Web Developer</title>
+    <meta name="description" content="Comprehensive skills summary and professional overview of Mark Harris's web development competencies, project achievements, and career readiness.">
+    <meta name="author" content="Mark Harris">
+    <meta name="keywords" content="Mark Harris skills, web developer resume, HTML expertise, professional summary">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional print-specific styles */
+        @media print {
+            header nav,
+            .no-print,
+            footer,
+            .cta-section {
+                display: none !important;
+            }
+            
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 11pt;
+                line-height: 1.4;
+            }
+            
+            .content {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 1rem;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            .skills-summary-grid {
+                display: block !important;
+            }
+            
+            .skills-category {
+                margin-bottom: 1rem;
+                break-inside: avoid;
+            }
+            
+            .projects-table {
+                font-size: 9pt;
+                margin: 0.5rem 0;
+            }
+            
+            .projects-table th,
+            .projects-table td {
+                padding: 0.3rem;
+                border: 1px solid #333;
+            }
+            
+            .achievement-stats {
+                display: grid !important;
+                grid-template-columns: repeat(4, 1fr) !important;
+                gap: 0.5rem !important;
+                margin: 1rem 0 !important;
+                page-break-inside: avoid;
+            }
+            
+            .stat-item {
+                text-align: center;
+                border: 1px solid #333;
+                padding: 0.5rem;
+            }
+            
+            .stat-item strong {
+                display: block;
+                font-size: 12pt;
+                font-weight: bold;
+            }
+            
+            .stat-item span {
+                font-size: 8pt;
+            }
+            
+            a[href^="http"]:after {
+                content: "";
+            }
+        }
+        
+        /* Screen-only styles for better web viewing */
+        @media screen {
+            .print-instructions {
+                background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+                color: white;
+                padding: 1.5rem;
+                text-align: center;
+                margin: 2rem 0;
+                border-radius: 10px;
+            }
+            
+            .print-instructions h3 {
+                color: white;
+                margin-bottom: 1rem;
+            }
+            
+            .print-btn {
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                padding: 0.75rem 1.5rem;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: 600;
+                display: inline-block;
+                margin: 0.5rem;
+                transition: all 0.3s ease;
+            }
+            
+            .print-btn:hover {
+                background: rgba(255, 255, 255, 0.3);
+                border-color: white;
+            }
+        }
+        
+        /* Enhanced table styles for better readability */
+        .projects-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .projects-table th,
+        .projects-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .projects-table th {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .projects-table .project-name {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .complexity-badge {
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .complexity-foundation {
+            background: #e8f5e8;
+            color: #2e7d32;
+        }
+        
+        .complexity-intermediate {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+        
+        .complexity-advanced {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        /* Skills summary specific styles */
+        .skills-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .skills-category {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .skills-category h3 {
+            color: #4CAF50;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skill-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .skill-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .achievement-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .next-steps-container {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 3rem 0;
+        }
+        
+        .roadmap-timeline {
+            margin: 2rem 0;
+        }
+        
+        .roadmap-item {
+            padding: 1.5rem;
+            border-left: 4px solid #4CAF50;
+            background: #f8f9fa;
+            margin-bottom: 1.5rem;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .roadmap-item h4 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .roadmap-item ul {
+            margin-left: 1.5rem;
+        }
+        
+        .professional-qualities {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+        
+        .qualities-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .qualities-section h4 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .qualities-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .qualities-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .qualities-list li:before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .skills-summary-grid,
+            .professional-qualities {
+                grid-template-columns: 1fr;
+            }
+            
+            .achievement-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="skills-dashboard.html">Skills Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="page-hero">
+                <h1>Professional Skills Summary</h1>
+                <p class="page-subtitle">Comprehensive overview of technical competencies and professional readiness</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="content">
+            <!-- Print Instructions (Screen Only) -->
+            <section class="print-instructions no-print">
+                <h3>📄 Printable Skills Summary</h3>
+                <p>This page is optimized for both web viewing and professional printing. Use the print function to generate a clean, resume-ready PDF.</p>
+                <div>
+                    <button onclick="window.print()" class="print-btn">🖨️ Print/Save as PDF</button>
+                    <a href="contact.html" class="print-btn">📧 Return to Contact</a>
+                </div>
+            </section>
+
+            <!-- Professional Header -->
+            <section id="professional-header" aria-labelledby="header-heading" class="intro-section">
+                <div class="professional-intro">
+                    <h2 id="header-heading">Mark Harris - Web Developer</h2>
+                    <p class="lead-paragraph">
+                        <strong>7-Day HTML Bootcamp Graduate</strong> | Semantic Web Specialist | Accessibility-Focused Developer
+                    </p>
+                    <div class="contact-summary">
+                        <p><strong>Portfolio:</strong> <a href="index.html">markharris.dev</a> | 
+                        <strong>Email:</strong> mark.harris.dev@example.com | 
+                        <strong>GitHub:</strong> <a href="https://github.com/MarkTheGD" target="_blank" rel="noopener">github.com/MarkTheGD</a></p>
+                    </div>
+                </div>
+
+                <div class="achievement-stats">
+                    <div class="stat-item">
+                        <strong>7 Days</strong>
+                        <span>Intensive Learning</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>6 Projects</strong>
+                        <span>Portfolio Pieces</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>47 Hours</strong>
+                        <span>Hands-on Coding</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>100%</strong>
+                        <span>HTML Proficiency</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Skills Overview -->
+            <section id="technical-skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Technical Skills & Competencies</h2>
+                <p class="section-intro">
+                    Comprehensive overview of technical skills mastered during intensive HTML bootcamp and ongoing development.
+                </p>
+                
+                <div class="skills-summary-grid">
+                    <div class="skills-category">
+                        <h3>HTML5 & Web Standards</h3>
+                        <ul class="skill-list">
+                            <li>Semantic HTML5 elements and document structure</li>
+                            <li>Cross-browser compatibility and standards compliance</li>
+                            <li>W3C validation and best practices</li>
+                            <li>Performance-conscious markup and optimization</li>
+                            <li>SEO-friendly structure and meta tag implementation</li>
+                            <li>Modern HTML APIs and progressive enhancement</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Web Accessibility</h3>
+                        <ul class="skill-list">
+                            <li>WCAG 2.1 Guidelines (AA compliance achieved)</li>
+                            <li>ARIA labels, roles, and accessibility attributes</li>
+                            <li>Screen reader compatibility and testing</li>
+                            <li>Keyboard navigation and focus management</li>
+                            <li>Color contrast standards and inclusive design</li>
+                            <li>Accessibility-first development approach</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Content & Media Management</h3>
+                        <ul class="skill-list">
+                            <li>Image optimization and responsive media</li>
+                            <li>Audio/video integration with fallbacks</li>
+                            <li>Semantic figure and caption implementation</li>
+                            <li>File organization and asset management</li>
+                            <li>Content strategy and information architecture</li>
+                            <li>Multimedia accessibility considerations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Data & User Interaction</h3>
+                        <ul class="skill-list">
+                            <li>Complex HTML table design and accessibility</li>
+                            <li>Advanced form creation and validation</li>
+                            <li>Input types, attributes, and user experience</li>
+                            <li>Navigation systems and link management</li>
+                            <li>User-centered design principles</li>
+                            <li>JavaScript integration for enhanced UX</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Portfolio Summary -->
+            <section id="portfolio-summary" aria-labelledby="portfolio-heading">
+                <h2 id="portfolio-heading">Project Portfolio Achievements</h2>
+                <p class="section-intro">
+                    Complete overview of projects developed during bootcamp, demonstrating progressive skill development and professional quality.
+                </p>
+                
+                <table class="projects-table">
+                    <caption>Detailed breakdown of portfolio projects with technical achievements</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Project Name</th>
+                            <th scope="col">Technical Skills Demonstrated</th>
+                            <th scope="col">Key Professional Achievement</th>
+                            <th scope="col">Complexity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="project-name">Multi-Page Portfolio Website</td>
+                            <td>Semantic HTML5, Navigation Systems, Cross-page Consistency, Accessibility Implementation</td>
+                            <td>Professional online presence with 6 interconnected pages demonstrating systematic development approach</td>
+                            <td><span class="complexity-badge complexity-advanced">Advanced</span></td>
+                        </tr>
+                        <tr>
+                            <td class="project-name">Interactive Contact Forms</td>
+                            <td>Advanced Form Design, Input Validation, UX Optimization, JavaScript Integration</td>
+                            <td>Professional communication system with multiple form types and enhanced user experience</td>
+                            <td><span class="complexity-badge complexity-advanced">Advanced</span></td>
+                        </tr>
+                        <tr>
+                            <td class="project-name">Skills Dashboard System</td>
+                            <td>Complex Table Structures, Data Organization, Information Architecture, Progress Tracking</td>
+                            <td>Comprehensive professional development tracking demonstrating analytical and planning skills</td>
+                            <td><span class="complexity-badge complexity-intermediate">Intermediate</span></td>
+                        </tr>
+                        <tr>
+                            <td class="project-name">Multimedia Gallery</td>
+                            <td>Media Integration, Figure/Figcaption, Image Optimization, Accessibility Features</td>
+                            <td>Accessible photo gallery with audio/video elements showcasing multimedia handling expertise</td>
+                            <td><span class="complexity-badge complexity-intermediate">Intermediate</span></td>
+                        </tr>
+                        <tr>
+                            <td class="project-name">Professional Documentation</td>
+                            <td>Technical Writing, Project Presentation, Code Quality, Learning Documentation</td>
+                            <td>Complete learning journey documentation proving reflective learning and communication skills</td>
+                            <td><span class="complexity-badge complexity-advanced">Advanced</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Professional Development -->
+            <section id="professional-development" aria-labelledby="development-heading">
+                <h2 id="development-heading">Professional Development & Readiness</h2>
+                
+                <div class="professional-qualities">
+                    <div class="qualities-section">
+                        <h4>Technical Competencies</h4>
+                        <ul class="qualities-list">
+                            <li>Clean, semantic code structure following industry standards</li>
+                            <li>Accessibility-first development approach from day one</li>
+                            <li>Performance-conscious implementation and optimization</li>
+                            <li>Standards compliance and cross-browser compatibility</li>
+                            <li>Systematic debugging and problem-solving methodology</li>
+                            <li>Professional documentation and code organization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="qualities-section">
+                        <h4>Professional Qualities</h4>
+                        <ul class="qualities-list">
+                            <li>Rapid learning ability and skill acquisition (7-day transformation)</li>
+                            <li>Systematic approach to complex project development</li>
+                            <li>Quality-focused mindset with attention to detail</li>
+                            <li>Strong technical communication and presentation skills</li>
+                            <li>Self-directed learning with measurable progress tracking</li>
+                            <li>Collaborative mindset and readiness for team environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Development Tools & Workflow -->
+            <section id="development-tools" aria-labelledby="tools-heading">
+                <h2 id="tools-heading">Development Tools & Workflow</h2>
+                
+                <div class="skills-summary-grid">
+                    <div class="skills-category">
+                        <h3>Development Environment</h3>
+                        <ul class="skill-list">
+                            <li>Visual Studio Code with HTML/accessibility extensions</li>
+                            <li>Browser Developer Tools (Chrome DevTools proficiency)</li>
+                            <li>Git version control and GitHub collaboration</li>
+                            <li>W3C Markup Validator for standards compliance</li>
+                            <li>WAVE Web Accessibility Evaluation Tool</li>
+                            <li>Cross-browser testing and compatibility checking</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Learning & Growth Methodology</h3>
+                        <ul class="skill-list">
+                            <li>AI-assisted learning for accelerated development</li>
+                            <li>Systematic skill tracking and progress documentation</li>
+                            <li>Project-based learning with real-world applications</li>
+                            <li>Community engagement and professional networking</li>
+                            <li>Continuous improvement and feedback integration</li>
+                            <li>Industry standard research and best practice adoption</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Career Development Roadmap -->
+            <section id="career-roadmap" aria-labelledby="roadmap-heading">
+                <h2 id="roadmap-heading">Career Development Roadmap</h2>
+                
+                <div class="next-steps-container">
+                    <h3>📈 Next 6 Months Development Plan</h3>
+                    <div class="roadmap-timeline">
+                        <div class="roadmap-item">
+                            <h4>✅ Foundation Complete (Current Status)</h4>
+                            <p><strong>HTML5 Mastery Achieved:</strong> Semantic markup, accessibility, professional portfolio, and development workflow established.</p>
+                            <ul>
+                                <li>6 complete projects demonstrating HTML proficiency</li>
+                                <li>Professional portfolio ready for industry presentation</li>
+                                <li>Comprehensive understanding of web standards and accessibility</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="roadmap-item">
+                            <h4>🎨 CSS Mastery (Weeks 1-2)</h4>
+                            <p><strong>Visual Design & Layout:</strong> Transform semantic HTML into responsive, professional designs.</p>
+                            <ul>
+                                <li>CSS Grid and Flexbox for complex, responsive layouts</li>
+                                <li>CSS animations, transitions, and micro-interactions</li>
+                                <li>Mobile-first responsive design methodology</li>
+                                <li>CSS preprocessing and modern workflow integration</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="roadmap-item">
+                            <h4>⚡ JavaScript Fundamentals (Weeks 3-4)</h4>
+                            <p><strong>Interactive Development:</strong> Add dynamic functionality and modern user experiences.</p>
+                            <ul>
+                                <li>DOM manipulation and event-driven programming</li>
+                                <li>ES6+ syntax and modern JavaScript patterns</li>
+                                <li>Asynchronous programming and API integration</li>
+                                <li>Testing fundamentals and debugging strategies</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="roadmap-item">
+                            <h4>🚀 Framework Development (Weeks 5-6)</h4>
+                            <p><strong>Modern Web Applications:</strong> React development and component-based architecture.</p>
+                            <ul>
+                                <li>React hooks and functional component development</li>
+                                <li>State management and application architecture</li>
+                                <li>Component testing and modern development practices</li>
+                                <li>Full-stack application integration readiness</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Summary -->
+            <section id="summary" aria-labelledby="summary-heading" class="cta-section">
+                <h2 id="summary-heading">Professional Summary & Readiness</h2>
+                <p>
+                    This comprehensive skills summary demonstrates not just technical HTML competency, but systematic learning ability, 
+                    professional development practices, and clear vision for continued growth. Proven track record of rapid skill 
+                    acquisition, quality-focused development, and professional presentation makes me ready for mentorship and 
+                    collaborative development opportunities.
+                </p>
+                <div class="cta-buttons no-print">
+                    <a href="contact.html" class="cta-primary">Discuss Opportunities</a>
+                    <a href="projects.html" class="cta-secondary">View Complete Portfolio</a>
+                    <a href="about.html" class="cta-secondary">Learn About My Journey</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p><strong>Professional skills summary demonstrating readiness for web development career advancement</strong></p>
+            <p>Complete portfolio available at: <a href="index.html">markharris.dev</a> | <a href="contact.html">Professional inquiries welcome</a></p>
+            <p>&copy; 2025 Mark Harris. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth scroll for internal links -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
